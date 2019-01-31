@@ -37,7 +37,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\pro_m\Proyectos\proyectoenv"
+=======
+VIRTUAL_ENV="C:\Users\Mel\proyectos\proyectoenv"
+>>>>>>> gitmel/master
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

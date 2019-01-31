@@ -27,7 +27,11 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
+<<<<<<< HEAD
 $env:VIRTUAL_ENV="C:\Users\pro_m\Proyectos\proyectoenv"
+=======
+$env:VIRTUAL_ENV="C:\Users\Mel\proyectos\proyectoenv"
+>>>>>>> gitmel/master
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
