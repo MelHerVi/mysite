@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
+
 def base_prueba(request):
-    context  = {
+    context = {
         'Pepe': '100',
         'adios': 'que tal'
     }
