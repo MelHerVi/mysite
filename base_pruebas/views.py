@@ -2,8 +2,9 @@ from django.shortcuts import render
 
 
 def base_prueba(request):
+    template = 'base_pruebas/pruebas_js.html'
+
     context = {
-        'Pepe': '100',
-        'adios': 'que tal'
+        'Valor_prueba': '100'
     }
-    return render(request, 'base_pruebas/base_prueba.html', context)
+    return render(request, template, context)

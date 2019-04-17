@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>Pruebas de JS ES6</title>
+</head>
+<body>
+
+  <input type="text" value="hola" id="test" class="p"/>
+  <input type="text" value="holaaaaaaaa" class="p"/>
+  <input type="text" value="holaaa" class="p"/>
+  <input type="text" value="asdads" class="p"/>
+  <input type="text" value="eeeeeeeeee" class="p"/>
+  <input type="text" value="holaaaaaaaa" class="p"/>
+  <input type="text" value="nnnnnnnnn" class="p"/>
+
+</body>
+</html>
+
+<script>
+$(document).ready(() => {
+  $('#test').on('keyup', element => {
+    console.table($(element.target).val())
+  })
+
+$('input.p').each((index, item) => {
+  console.log($(item).val())
+})
+
+
+});
+</script>
