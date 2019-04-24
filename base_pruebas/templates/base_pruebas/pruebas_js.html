@@ -20,14 +20,25 @@
 
 <script>
 $(document).ready(() => {
-  $('#test').on('keyup', element => {
-    console.table($(element.target).val())
-  })
+  // $('#test').on('keyup', element => {
+  //   console.table($(element.target).val())
+  // })
 
-$('input.p').each((index, item) => {
-  console.log($(item).val())
-})
-
-
+// $('input.p').each((index, item) => {
+//   console.log($(item).val())
+// })
 });
+
+var fn = (element1, element2) => $element1+ ' ' + $element2;
+console.log($('#test').val(), $('#test').val());
+
+let name = 'Mel';
+let age = '30';
+
+let obj = {
+  name,
+  age
+};
+
+console.table(obj)
 </script>
