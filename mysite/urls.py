@@ -22,7 +22,10 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', include('django.contrib.auth.urls'), name='login'),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    url('ejemplos/', include('base_pruebas.urls')),
+    path('', include('django.contrib.auth.urls')),
+    # ejemplo del login y de como hacer de un template un views
+    path(
+        'home/',
+        TemplateView.as_view(template_name='home.html'), name='home'),
+    url('ejemplos/', include('base_pruebas.urls')),  # estamos utilizando éste
 ]
